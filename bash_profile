@@ -1,3 +1,6 @@
+if [ -a .bashrc ]; then
+    source ~/.bash_completion
+fi
 if [ -a .bash_aliases ]; then
     source ~/.bash_aliases
 fi
@@ -10,8 +13,3 @@ fi
 if [ -a .profile ]; then
     source ~/.profile
 fi
-
-set -o vi
-
-export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
